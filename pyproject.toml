@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "moodle_tests"
+version = "0.1.0"
+description = "Tests Moodle site"
+authors = ["grsln <grsln@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+selenium = "^3.141.0"
+pytest = "^6.2.4"
+webdriver-manager = "^3.4.2"
+flake8 = "^3.9.2"
+black = "^21.7b0"
+pre-commit = "^2.14.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
