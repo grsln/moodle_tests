@@ -187,6 +187,3 @@ virtualenv==20.7.2; python_full_version >= "3.6.1" \
 webdriver-manager==3.4.2; python_version >= "3.6" \
     --hash=sha256:50a6e174106542f5335cacc387cec7ada26812babc1aeca61c208a1bab2ac2c5 \
     --hash=sha256:c6d81590aae6fc0fb10cf7dd20c8c1b9bb043501f9cf62c316a854a0de841e32
-
-selenium~=3.141.0
-pytest~=6.2.4
