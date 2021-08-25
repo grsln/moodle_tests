@@ -12,3 +12,6 @@ class Application:
 
     def quit(self):
         self.driver.quit()
+
+    def open_auth_page(self):
+        self.driver.get(self.url + "/login/index.php")
