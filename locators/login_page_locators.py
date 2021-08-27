@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 
+from common.constants import LoginConstants
+
 
 class LoginPageLocators:
     LOGIN = (By.ID, "username")
@@ -9,3 +11,7 @@ class LoginPageLocators:
     USER_BUTTON = (By.CLASS_NAME, "userbutton")
     USER_MENU = (By.CLASS_NAME, "usermenu")
     EXIT = (By.ID, "actionmenuaction-6")
+    LOGIN_LINK = (By.PARTIAL_LINK_TEXT, LoginConstants.LOGIN_URL)
+    LOGIN_ERROR = (By.ID, "loginerrormessage")
+    MODAL_BODY = (By.ID, "modal-body")
+    LOGOUT_BUTTON = (By.XPATH, "//form[@action='" + LoginConstants.LOGOUT_URL + "']")
