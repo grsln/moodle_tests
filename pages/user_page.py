@@ -1,3 +1,5 @@
+from os.path import abspath, dirname
+
 from selenium.webdriver.remote.webelement import WebElement
 
 from locators.user_page_locators import UserPageLocators
@@ -93,7 +95,9 @@ class UserPage(BasePage):
         self.click_element(self.avatar_tab())
         self.click_element(self.add_avatar_link())
 
-        self.avatar_file_input().send_keys("/home/ruslan/Рабочий стол/robot.jpeg")
+        self.avatar_file_input().send_keys(
+            f"{self.get_tests_path()}/common/images/robot.jpeg"
+        )
         self.click_element(self.upload_file_button())
         if self.is_opened_dialogs():
             self.find_element(UserPageLocators.LOAD_IMG)
@@ -101,3 +105,13 @@ class UserPage(BasePage):
 
     def is_changed(self):
         return self.save_notification() is not None
+
+    def is_error_required_field(self):
+        elements = self.find_elements(UserPageLocators.ERROR_DIV)
+        if len(elements) > 0:
+            return True
+        return False
+
+    @staticmethod
+    def get_tests_path():
+        return dirname(dirname(abspath(__file__)))

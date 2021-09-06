@@ -29,3 +29,4 @@ class UserPageLocators:
         '//div[@class="moodle-dialogue-base"][@aria-hidden="false"]',
     )
     LOAD_IMG = (By.CLASS_NAME, "realpreview")
+    ERROR_DIV = (By.XPATH, '//div[contains(@id,"id_error")]')
