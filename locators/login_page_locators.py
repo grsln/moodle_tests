@@ -14,4 +14,4 @@ class LoginPageLocators:
     LOGIN_LINK = (By.PARTIAL_LINK_TEXT, LoginConstants.LOGIN_URL)
     LOGIN_ERROR = (By.ID, "loginerrormessage")
     MODAL_BODY = (By.ID, "modal-body")
-    LOGOUT_BUTTON = (By.XPATH, "//form[@action='" + LoginConstants.LOGOUT_URL + "']")
+    LOGOUT_BUTTON = (By.XPATH, f"//form[@action='{LoginConstants.LOGOUT_URL}']")

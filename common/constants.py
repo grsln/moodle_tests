@@ -8,3 +8,4 @@ class LoginConstants:
 class ProfileConstants:
     EDIT_PROFILE = "https://qacoursemoodle.innopolis.university/user/editadvanced.php"
     SUCCESS_SAVE = "Изменения сохранены"
+    AVATAR_LINK = "common/robot.jpeg"

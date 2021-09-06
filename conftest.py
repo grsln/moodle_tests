@@ -1,3 +1,5 @@
+import logging
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -5,6 +7,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from models.auth import AuthData
 from pages.application import Application
+
+logger = logging.getLogger("moodle")
 
 
 @pytest.fixture(scope="session")

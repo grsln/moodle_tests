@@ -19,7 +19,7 @@ class BasePage:
 
     @staticmethod
     def set_value_select(element, value):
-        return Select(element).select_by_visible_text(value)
+        return Select(element).select_by_value(value)
 
     @staticmethod
     def fill_element(element, text):
