@@ -27,4 +27,10 @@ class ProfileData:
         email = fake.email()
         city = fake.city()
         country_code = fake.country_code()
-        return ProfileData(firstname, lastname, email, city, country_code)
+        return ProfileData(
+            firstname=firstname,
+            lastname=lastname,
+            email=email,
+            city=city,
+            country_code=country_code,
+        )

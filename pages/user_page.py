@@ -91,16 +91,18 @@ class UserPage(BasePage):
         }
         for key in fields.keys():
             self.fill_element(fields[key](), getattr(data, key))
+
         self.set_value_select(self.country_input(), data.country_code)
+
         self.click_element(self.avatar_tab())
         self.click_element(self.add_avatar_link())
-
         self.avatar_file_input().send_keys(
             f"{self.get_tests_path()}/common/images/robot.jpeg"
         )
         self.click_element(self.upload_file_button())
         if self.is_opened_dialogs():
             self.find_element(UserPageLocators.LOAD_IMG)
+
         self.click_element(self.submit_button())
 
     def is_changed(self):
@@ -111,6 +113,15 @@ class UserPage(BasePage):
         if len(elements) > 0:
             return True
         return False
+
+    def firstname_length(self):
+        element = self.firstname_input()
+        return len(element.get_attribute("value"))
+
+    def change_firstname(self, text):
+        firstname_element = self.firstname_input()
+        self.fill_element(firstname_element, text)
+        return firstname_element.get_attribute("value")
 
     @staticmethod
     def get_tests_path():
