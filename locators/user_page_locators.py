@@ -30,3 +30,4 @@ class UserPageLocators:
     )
     LOAD_IMG = (By.CLASS_NAME, "realpreview")
     ERROR_DIV = (By.XPATH, '//div[contains(@id,"id_error")]')
+    CANCEL_BUTTON = (By.XPATH, '//*[@id="id_cancel"]')

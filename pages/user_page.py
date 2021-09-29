@@ -123,6 +123,12 @@ class UserPage(BasePage):
         self.fill_element(firstname_element, text)
         return firstname_element.get_attribute("value")
 
+    def cancel_button(self):
+        return self.find_element(UserPageLocators.CANCEL_BUTTON)
+
+    def cancel_edit(self):
+        self.click_element(self.cancel_button())
+
     @staticmethod
     def get_tests_path():
         return dirname(dirname(abspath(__file__)))

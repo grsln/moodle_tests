@@ -28,13 +28,23 @@ def app(request):
     fixture.quit()
 
 
-@pytest.fixture
-def auth(request, app):
+def auth_fixture(request, app):
     app.open_auth_page()
     username = request.config.getoption("--username")
     password = request.config.getoption("--password")
     data = AuthData(login=username, password=password)
     app.login.auth(data)
+
+
+@pytest.fixture
+def auth(request, app):
+    auth_fixture(request, app)
+
+
+@pytest.fixture(scope="class")
+def user_page(request, app):
+    auth_fixture(request, app)
+    app.open_user_page()
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)

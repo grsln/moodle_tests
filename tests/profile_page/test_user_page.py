@@ -1,5 +1,4 @@
 import pytest
-from selenium.common.exceptions import ElementClickInterceptedException
 
 from conftest import logger
 from models.profile import ProfileData
@@ -45,24 +44,6 @@ class TestUserPage:
         assert page.is_error_required_field(), "No error message for required field."
 
     @pytest.mark.profile
-    def test_long_firstname(self, app, auth):
-        """
-        Steps
-        1. Open profile page
-        2. Type long firstname in firstname field
-        3. Check changes
-        """
-        logger.info("Start test_long_firstname")
-        app.open_user_page()
-        page = app.user_page
-        logger.info("Change field firstname")
-        firstnames = map(page.change_firstname, [99 * "a", 100 * "a", 101 * "a"])
-        len_firstnames = list(map(len, firstnames))
-        logger.info("Check changes")
-        assert len_firstnames == [99, 100, 100], "Assigned long firstname."
-
-    @pytest.mark.skip
-    @pytest.mark.profile
     def test_usermenu(self, app, auth):
         """
         Steps
@@ -80,5 +61,24 @@ class TestUserPage:
         setattr(data, "firstname", 100 * "a")
         page.change_fields(data)
         logger.info("Check changes")
-        with pytest.raises(ElementClickInterceptedException):
-            page.open_profile()
+        page.open_profile()
+
+
+class TestLongFirstname:
+    @pytest.mark.profile
+    @pytest.mark.parametrize(
+        "firstname", [(99 * "a", 99), (100 * "a", 100), (101 * "a", 100)]
+    )
+    def test_long_firstname(self, app, user_page, firstname):
+        """
+        Firstname field has attribute maxlength=100
+        Steps
+        1. Type long firstname in firstname field
+        2. Check changes
+        """
+        logger.info("Start test_long_firstname")
+        text, result = firstname
+        logger.info("Change field firstname")
+        field_text = app.user_page.change_firstname(text)
+        logger.info("Check changes")
+        assert len(field_text) == result, "Assigned long firstname."
