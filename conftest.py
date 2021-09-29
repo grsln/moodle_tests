@@ -17,6 +17,7 @@ def app(request):
     base_url = request.config.getoption("--base-url")
     headless = request.config.getoption("--headless")
     chrome_options = Options()
+    chrome_options.add_argument("--window-size=1920,1080")
     chrome_options.add_argument("--start-maximized")
     if headless.lower() == "true":
         chrome_options.add_argument("--headless")
