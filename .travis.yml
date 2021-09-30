@@ -7,3 +7,13 @@ install:
 # command to run tests
 script:
   - pytest --headless=true --alluredir=allure_reports
+  - bash allure.sh
+  - allure generate allure_reports
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: allure-report
+  on:
+    branch: main
