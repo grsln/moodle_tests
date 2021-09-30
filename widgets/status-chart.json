@@ -1,0 +1,151 @@
+[ {
+  "uid" : "ac1817d4f64b7f64",
+  "name" : "test_create_course",
+  "time" : {
+    "start" : 1633001303528,
+    "stop" : 1633001324790,
+    "duration" : 21262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "308b7ed68bd166e5",
+  "name" : "test_auth_valid_login[password]",
+  "time" : {
+    "start" : 1633001298198,
+    "stop" : 1633001299905,
+    "duration" : 1707
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34ad19a0e5116d13",
+  "name" : "test_long_firstname[firstname1]",
+  "time" : {
+    "start" : 1633001385237,
+    "stop" : 1633001385586,
+    "duration" : 349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "68b8ece67406b573",
+  "name" : "test_auth_valid_login[]",
+  "time" : {
+    "start" : 1633001296715,
+    "stop" : 1633001298193,
+    "duration" : 1478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca4281df559c014b",
+  "name" : "test_required_fields_empty[email]",
+  "time" : {
+    "start" : 1633001361734,
+    "stop" : 1633001366518,
+    "duration" : 4784
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99051b4520d852e",
+  "name" : "test_usermenu",
+  "time" : {
+    "start" : 1633001370457,
+    "stop" : 1633001379208,
+    "duration" : 8751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b63a0749f2b89aa",
+  "name" : "test_auth_empty_data[login]",
+  "time" : {
+    "start" : 1633001294368,
+    "stop" : 1633001295471,
+    "duration" : 1103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6180b307259a378b",
+  "name" : "test_change_field",
+  "time" : {
+    "start" : 1633001329868,
+    "stop" : 1633001338505,
+    "duration" : 8637
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed5467a03be4186a",
+  "name" : "test_required_fields_empty[firstname]",
+  "time" : {
+    "start" : 1633001342431,
+    "stop" : 1633001347764,
+    "duration" : 5333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44fc8422f7f06cc6",
+  "name" : "test_auth_empty_data[password]",
+  "time" : {
+    "start" : 1633001295476,
+    "stop" : 1633001296708,
+    "duration" : 1232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ce95514cae54a2b",
+  "name" : "test_auth_invalid_data",
+  "time" : {
+    "start" : 1633001291928,
+    "stop" : 1633001294363,
+    "duration" : 2435
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41ba98d61dce8b7f",
+  "name" : "test_long_firstname[firstname0]",
+  "time" : {
+    "start" : 1633001384632,
+    "stop" : 1633001385233,
+    "duration" : 601
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a9a7b7aea7d47e",
+  "name" : "test_required_fields_empty[lastname]",
+  "time" : {
+    "start" : 1633001352324,
+    "stop" : 1633001357947,
+    "duration" : 5623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "538afd28f860e1d3",
+  "name" : "test_auth_valid_data",
+  "time" : {
+    "start" : 1633001285310,
+    "stop" : 1633001291923,
+    "duration" : 6613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54c751010e38c351",
+  "name" : "test_long_firstname[firstname2]",
+  "time" : {
+    "start" : 1633001385591,
+    "stop" : 1633001385938,
+    "duration" : 347
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
