@@ -8,6 +8,19 @@
 
 ### Начало работы
 
+Процесс установки описан для Ubuntu
+
+Создание и переход в директорию на локальном компьютере
+
+```
+mkdir moodle_test && cd moodle_tests
+```
+
+Клонирование файлов из удаленного репозитория
+```
+git clone https://github.com/grsln/moodle_tests
+```
+
 Создание и активация виртуального окружения
 
 ```
@@ -55,7 +68,9 @@ allure serve allure_reports
 
 **Тестирование авторизации**
 
-_test_auth.py_
+Запуск в файле [_test/auth/test_auth.py_](https://github.com/grsln/moodle_tests/blob/main/tests/auth/test_auth.py)
+
+__тест-кейсы__: [на форму авторизации](https://docs.google.com/spreadsheets/d/1rftMQABAk7yvVuYu2hfgfOJXMNjlXUwZIAuwGGlStFw/edit#gid=0&range=A1:C1)
 
 * проверка авторизации с валидными данными
 * проверка авторизации с невалидными данными
@@ -65,7 +80,9 @@ _test_auth.py_
 
 **Тестирование редактирования профиля пользователя**
 
-_test_user_page.py_
+Запуск в файле [_test/profile_page/test_user_page.py_](https://github.com/grsln/moodle_tests/blob/main/tests/profile_page/test_user_page.py)
+
+__тест-кейсы__: [на форму редактирования профиля пользователя](https://docs.google.com/spreadsheets/d/1rftMQABAk7yvVuYu2hfgfOJXMNjlXUwZIAuwGGlStFw/edit#gid=1583827046&range=A1)
 
 * проверка изменения обязательных полей
 * проверка заполнения обязательных полей пустой строкой
@@ -73,6 +90,13 @@ _test_user_page.py_
 
 **Тестирование создания курсов**
 
-_test_course_page.py_
+Запуск в файле [_test/course_page/test_course_page.py_](https://github.com/grsln/moodle_tests/blob/main/tests/course_page/test_course_page.py)
 
-* проверка создания курса
+__тест-кейсы__: [на форму создания курса](https://docs.google.com/spreadsheets/d/1rftMQABAk7yvVuYu2hfgfOJXMNjlXUwZIAuwGGlStFw/edit#gid=91230819&range=A1:C1)
+
+* проверка создания курса(+удаление курса после проверки)
+
+### Отчеты Allure
+
+При каждом _push_ и _pull request_ в Github c помощью **Travis CI** происходит запуск тестов и публикация отчетов на Github Pages
+https://grsln.github.io/moodle_tests/

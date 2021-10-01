@@ -25,3 +25,6 @@ class Application:
 
     def open_course_page(self):
         self.driver.get(self.url + "/course/edit.php")
+
+    def open_course_manage_page(self):
+        self.driver.get(self.url + "/course/management.php")
