@@ -156,17 +156,17 @@ class CoursePage(BasePage):
         self.delete_course()
         self.confirm_delete()
 
-    def is_full_course_name_error(self) -> bool:
-        element = self.find_elements(CoursePageLocators.FULLNAME_ERROR)
+    def is_name_error(self, error_locator) -> bool:
+        element = self.find_elements(error_locator)
         if len(element) > 0:
             return True
         return False
 
+    def is_full_course_name_error(self) -> bool:
+        return self.is_name_error(CoursePageLocators.FULLNAME_ERROR)
+
     def is_short_course_name_error(self) -> bool:
-        element = self.find_elements(CoursePageLocators.SHORTNAME_ERROR)
-        if len(element) > 0:
-            return True
-        return False
+        return self.is_name_error(CoursePageLocators.SHORTNAME_ERROR)
 
     def is_course_name_error(self):
         if self.is_short_course_name_error() or self.is_full_course_name_error():
@@ -179,6 +179,12 @@ class CoursePage(BasePage):
     def find_delete_confirmation(self) -> str:
         return self.find_elements(CoursePageLocators.COURSE_DELETE_CONFIRMATION)[1].text
 
+    def user_menu(self):
+        return self.find_element(CoursePageLocators.USER_MENU)
+
+    def exit_menu(self):
+        return self.find_element(CoursePageLocators.EXIT)
+
     def quit(self):
-        self.click_element(self.find_element(CoursePageLocators.USER_MENU))
-        self.click_element(self.find_element(CoursePageLocators.EXIT))
+        self.click_element(self.user_menu())
+        self.click_element(self.exit_menu())
