@@ -1,24 +1,24 @@
 {
-  "uid" : "99051b4520d852e",
-  "name" : "test_usermenu",
-  "fullName" : "tests.profile_page.test_user_page.TestUserPage#test_usermenu",
-  "historyId" : "9dfa63c93a88c36ffb54a8cf2a02626d",
+  "uid" : "774acd79b8252957",
+  "name" : "test_long_firstname[firstname2]",
+  "fullName" : "tests.profile_page.test_user_page.TestLongFirstname#test_long_firstname",
+  "historyId" : "48f4738acdab83867aef55dff686ab80",
   "time" : {
-    "start" : 1633001370457,
-    "stop" : 1633001379208,
-    "duration" : 8751
+    "start" : 1633092929234,
+    "stop" : 1633092929578,
+    "duration" : 344
   },
-  "description" : "\n        Steps\n        1. Open profile page\n        2. Change firstname with long string\n        3. Save change\n        4. Open user menu\n        5. Check that menu not clickable\n        ",
-  "descriptionHtml" : "<pre><code>    Steps\n    1. Open profile page\n    2. Change firstname with long string\n    3. Save change\n    4. Open user menu\n    5. Check that menu not clickable\n</code></pre>\n",
+  "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
+  "descriptionHtml" : "<pre><code>    Firstname field has attribute maxlength=100\n    Steps\n    1. Type long firstname in firstname field\n    2. Check changes\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "app",
+    "name" : "user_page",
     "time" : {
-      "start" : 1633001283042,
-      "stop" : 1633001285309,
-      "duration" : 2267
+      "start" : 1633092924288,
+      "stop" : 1633092928381,
+      "duration" : 4093
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,9 +31,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1633001282963,
-      "stop" : 1633001283041,
-      "duration" : 78
+      "start" : 1633092813665,
+      "stop" : 1633092813735,
+      "duration" : 70
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,11 +44,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "auth",
+    "name" : "app",
     "time" : {
-      "start" : 1633001366523,
-      "stop" : 1633001370456,
-      "duration" : 3933
+      "start" : 1633092813735,
+      "stop" : 1633092816243,
+      "duration" : 2508
     },
     "status" : "passed",
     "steps" : [ ],
@@ -60,13 +60,13 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n        Steps\n        1. Open profile page\n        2. Change firstname with long string\n        3. Save change\n        4. Open user menu\n        5. Check that menu not clickable\n        ",
+    "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "7dd69c5d7e2174b4",
+      "uid" : "4e7a14e451e2bf5c",
       "name" : "log",
-      "source" : "7dd69c5d7e2174b4.txt",
+      "source" : "4e7a14e451e2bf5c.txt",
       "type" : "text/plain",
       "size" : 137
     } ],
@@ -79,9 +79,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633001385940,
-      "stop" : 1633001386998,
-      "duration" : 1058
+      "start" : 1633092929580,
+      "stop" : 1633092929637,
+      "duration" : 57
     },
     "status" : "passed",
     "steps" : [ ],
@@ -103,13 +103,13 @@
     "value" : "test_user_page"
   }, {
     "name" : "subSuite",
-    "value" : "TestUserPage"
+    "value" : "TestLongFirstname"
   }, {
     "name" : "host",
-    "value" : "travis-job-5a8a697d-7f7d-4f3e-bba2-58f7ba7a18fb"
+    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
   }, {
     "name" : "thread",
-    "value" : "3624-MainThread"
+    "value" : "3676-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -123,7 +123,10 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ ],
+  "parameters" : [ {
+    "name" : "firstname",
+    "value" : "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 100)"
+  } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -133,6 +136,6 @@
     "categories" : [ ],
     "tags" : [ "profile" ]
   },
-  "source" : "99051b4520d852e.json",
-  "parameterValues" : [ ]
+  "source" : "774acd79b8252957.json",
+  "parameterValues" : [ "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 100)" ]
 }

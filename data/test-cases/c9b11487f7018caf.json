@@ -1,24 +1,24 @@
 {
-  "uid" : "ca4281df559c014b",
-  "name" : "test_required_fields_empty[email]",
-  "fullName" : "tests.profile_page.test_user_page.TestUserPage#test_required_fields_empty",
-  "historyId" : "9da31efe0fdb4b27cb3f83bcd2e2e83b",
+  "uid" : "c9b11487f7018caf",
+  "name" : "test_long_firstname[firstname0]",
+  "fullName" : "tests.profile_page.test_user_page.TestLongFirstname#test_long_firstname",
+  "historyId" : "f23bd87fe75cc860874b083a4d865086",
   "time" : {
-    "start" : 1633001361734,
-    "stop" : 1633001366518,
-    "duration" : 4784
+    "start" : 1633092928382,
+    "stop" : 1633092928884,
+    "duration" : 502
   },
-  "description" : "\n        Steps\n        1. Open profile page\n        2. Change required field with empty data\n        3. Save changes\n        4. Check changes\n        ",
-  "descriptionHtml" : "<pre><code>    Steps\n    1. Open profile page\n    2. Change required field with empty data\n    3. Save changes\n    4. Check changes\n</code></pre>\n",
+  "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
+  "descriptionHtml" : "<pre><code>    Firstname field has attribute maxlength=100\n    Steps\n    1. Type long firstname in firstname field\n    2. Check changes\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "app",
+    "name" : "user_page",
     "time" : {
-      "start" : 1633001283042,
-      "stop" : 1633001285309,
-      "duration" : 2267
+      "start" : 1633092924288,
+      "stop" : 1633092928381,
+      "duration" : 4093
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,9 +31,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1633001282963,
-      "stop" : 1633001283041,
-      "duration" : 78
+      "start" : 1633092813665,
+      "stop" : 1633092813735,
+      "duration" : 70
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,11 +44,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "auth",
+    "name" : "app",
     "time" : {
-      "start" : 1633001357951,
-      "stop" : 1633001361733,
-      "duration" : 3782
+      "start" : 1633092813735,
+      "stop" : 1633092816243,
+      "duration" : 2508
     },
     "status" : "passed",
     "steps" : [ ],
@@ -60,15 +60,15 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n        Steps\n        1. Open profile page\n        2. Change required field with empty data\n        3. Save changes\n        4. Check changes\n        ",
+    "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "3e08c9f9f041f635",
+      "uid" : "ca69a459eb343cd9",
       "name" : "log",
-      "source" : "3e08c9f9f041f635.txt",
+      "source" : "ca69a459eb343cd9.txt",
       "type" : "text/plain",
-      "size" : 144
+      "size" : 137
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -79,9 +79,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633001385940,
-      "stop" : 1633001386998,
-      "duration" : 1058
+      "start" : 1633092929580,
+      "stop" : 1633092929637,
+      "duration" : 57
     },
     "status" : "passed",
     "steps" : [ ],
@@ -103,13 +103,13 @@
     "value" : "test_user_page"
   }, {
     "name" : "subSuite",
-    "value" : "TestUserPage"
+    "value" : "TestLongFirstname"
   }, {
     "name" : "host",
-    "value" : "travis-job-5a8a697d-7f7d-4f3e-bba2-58f7ba7a18fb"
+    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
   }, {
     "name" : "thread",
-    "value" : "3624-MainThread"
+    "value" : "3676-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -124,8 +124,8 @@
     "value" : "allure2"
   } ],
   "parameters" : [ {
-    "name" : "field",
-    "value" : "'email'"
+    "name" : "firstname",
+    "value" : "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -136,6 +136,6 @@
     "categories" : [ ],
     "tags" : [ "profile" ]
   },
-  "source" : "ca4281df559c014b.json",
-  "parameterValues" : [ "'email'" ]
+  "source" : "c9b11487f7018caf.json",
+  "parameterValues" : [ "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)" ]
 }

@@ -1,3 +1,0 @@
-2021-09-30 11:28:23 INFO Start test_create_course
-2021-09-30 11:28:27 INFO Create course
-2021-09-30 11:28:44 INFO Check changes

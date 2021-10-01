@@ -1,9 +1,0 @@
-2021-09-30 11:28:03 INFO 
-
-2021-09-30 11:28:03 INFO ====== WebDriver manager ======
-2021-09-30 11:28:03 INFO Current google-chrome version is 83.0.4103
-2021-09-30 11:28:03 INFO Get LATEST driver version for 83.0.4103
-2021-09-30 11:28:03 INFO There is no [linux64] chromedriver for browser 83.0.4103 in cache
-2021-09-30 11:28:03 INFO Get LATEST driver version for 83.0.4103
-2021-09-30 11:28:03 INFO Trying to download new driver from https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip
-2021-09-30 11:28:03 INFO Driver has been saved in cache [/home/travis/.wdm/drivers/chromedriver/linux64/83.0.4103.39]

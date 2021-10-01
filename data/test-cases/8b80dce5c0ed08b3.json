@@ -1,12 +1,12 @@
 {
-  "uid" : "44fc8422f7f06cc6",
+  "uid" : "8b80dce5c0ed08b3",
   "name" : "test_auth_empty_data[password]",
   "fullName" : "tests.auth.test_auth.TestAuth#test_auth_empty_data",
   "historyId" : "85c45630f31e8800cb2b300d77991fb4",
   "time" : {
-    "start" : 1633001295476,
-    "stop" : 1633001296708,
-    "duration" : 1232
+    "start" : 1633092825049,
+    "stop" : 1633092826075,
+    "duration" : 1026
   },
   "description" : "\n        Steps\n        1. Open main page\n        2. Auth with empty data\n        3. Check auth result\n        ",
   "descriptionHtml" : "<pre><code>    Steps\n    1. Open main page\n    2. Auth with empty data\n    3. Check auth result\n</code></pre>\n",
@@ -14,11 +14,11 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "app",
+    "name" : "_session_faker",
     "time" : {
-      "start" : 1633001283042,
-      "stop" : 1633001285309,
-      "duration" : 2267
+      "start" : 1633092813665,
+      "stop" : 1633092813735,
+      "duration" : 70
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,11 +29,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "_session_faker",
+    "name" : "app",
     "time" : {
-      "start" : 1633001282963,
-      "stop" : 1633001283041,
-      "duration" : 78
+      "start" : 1633092813735,
+      "stop" : 1633092816243,
+      "duration" : 2508
     },
     "status" : "passed",
     "steps" : [ ],
@@ -49,9 +49,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "d075e6cced2c7370",
+      "uid" : "1c822227aeca00f7",
       "name" : "log",
-      "source" : "d075e6cced2c7370.txt",
+      "source" : "1c822227aeca00f7.txt",
       "type" : "text/plain",
       "size" : 51
     } ],
@@ -64,9 +64,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633001385940,
-      "stop" : 1633001386998,
-      "duration" : 1058
+      "start" : 1633092929580,
+      "stop" : 1633092929637,
+      "duration" : 57
     },
     "status" : "passed",
     "steps" : [ ],
@@ -91,10 +91,10 @@
     "value" : "TestAuth"
   }, {
     "name" : "host",
-    "value" : "travis-job-5a8a697d-7f7d-4f3e-bba2-58f7ba7a18fb"
+    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
   }, {
     "name" : "thread",
-    "value" : "3624-MainThread"
+    "value" : "3676-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -121,6 +121,6 @@
     "categories" : [ ],
     "tags" : [ "auth" ]
   },
-  "source" : "44fc8422f7f06cc6.json",
+  "source" : "8b80dce5c0ed08b3.json",
   "parameterValues" : [ "'password'" ]
 }

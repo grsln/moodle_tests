@@ -1,39 +1,24 @@
 {
-  "uid" : "6180b307259a378b",
-  "name" : "test_change_field",
-  "fullName" : "tests.profile_page.test_user_page.TestUserPage#test_change_field",
-  "historyId" : "10132cd3cc778961ae3b1852cff0794e",
+  "uid" : "158db3902faed408",
+  "name" : "test_required_fields_empty[lastname]",
+  "fullName" : "tests.profile_page.test_user_page.TestUserPage#test_required_fields_empty",
+  "historyId" : "3f6199635375eab1a8f5bf8287003c79",
   "time" : {
-    "start" : 1633001329868,
-    "stop" : 1633001338505,
-    "duration" : 8637
+    "start" : 1633092898594,
+    "stop" : 1633092904583,
+    "duration" : 5989
   },
-  "description" : "\n        Steps\n        1. Open profile page\n        2. Change fields with valid data\n        3. Save changes\n        4. Check changes\n        ",
-  "descriptionHtml" : "<pre><code>    Steps\n    1. Open profile page\n    2. Change fields with valid data\n    3. Save changes\n    4. Check changes\n</code></pre>\n",
+  "description" : "\n        Steps\n        1. Open profile page\n        2. Change required field with empty data\n        3. Save changes\n        4. Check changes\n        ",
+  "descriptionHtml" : "<pre><code>    Steps\n    1. Open profile page\n    2. Change required field with empty data\n    3. Save changes\n    4. Check changes\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "app",
-    "time" : {
-      "start" : 1633001283042,
-      "stop" : 1633001285309,
-      "duration" : 2267
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
     "name" : "auth",
     "time" : {
-      "start" : 1633001324795,
-      "stop" : 1633001329867,
-      "duration" : 5072
+      "start" : 1633092895221,
+      "stop" : 1633092898591,
+      "duration" : 3370
     },
     "status" : "passed",
     "steps" : [ ],
@@ -46,9 +31,24 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1633001282963,
-      "stop" : 1633001283041,
-      "duration" : 78
+      "start" : 1633092813665,
+      "stop" : 1633092813735,
+      "duration" : 70
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1633092813735,
+      "stop" : 1633092816243,
+      "duration" : 2508
     },
     "status" : "passed",
     "steps" : [ ],
@@ -60,15 +60,15 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n        Steps\n        1. Open profile page\n        2. Change fields with valid data\n        3. Save changes\n        4. Check changes\n        ",
+    "description" : "\n        Steps\n        1. Open profile page\n        2. Change required field with empty data\n        3. Save changes\n        4. Check changes\n        ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "18af572213e8ba90",
+      "uid" : "b60b39ab929b9c95",
       "name" : "log",
-      "source" : "18af572213e8ba90.txt",
+      "source" : "b60b39ab929b9c95.txt",
       "type" : "text/plain",
-      "size" : 135
+      "size" : 144
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -79,9 +79,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633001385940,
-      "stop" : 1633001386998,
-      "duration" : 1058
+      "start" : 1633092929580,
+      "stop" : 1633092929637,
+      "duration" : 57
     },
     "status" : "passed",
     "steps" : [ ],
@@ -106,10 +106,10 @@
     "value" : "TestUserPage"
   }, {
     "name" : "host",
-    "value" : "travis-job-5a8a697d-7f7d-4f3e-bba2-58f7ba7a18fb"
+    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
   }, {
     "name" : "thread",
-    "value" : "3624-MainThread"
+    "value" : "3676-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -123,7 +123,10 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ ],
+  "parameters" : [ {
+    "name" : "field",
+    "value" : "'lastname'"
+  } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -133,6 +136,6 @@
     "categories" : [ ],
     "tags" : [ "profile" ]
   },
-  "source" : "6180b307259a378b.json",
-  "parameterValues" : [ ]
+  "source" : "158db3902faed408.json",
+  "parameterValues" : [ "'lastname'" ]
 }
