@@ -48,6 +48,13 @@ def user_page(request, app):
     app.open_user_page()
 
 
+@pytest.fixture
+def delete_course(app):
+    yield
+    app.course_page.delete_created_course()
+    app.course_page.quit()
+
+
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield

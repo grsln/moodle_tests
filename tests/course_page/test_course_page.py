@@ -6,7 +6,7 @@ from models.course import CourseData
 
 class TestCoursePage:
     @pytest.mark.course
-    def test_create_course(self, app, auth):
+    def test_create_course(self, app, auth, delete_course):
         """
         Steps
         1. Open course page

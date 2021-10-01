@@ -50,9 +50,6 @@ class UserPage(BasePage):
     def avatar_input(self) -> WebElement:
         return self.find_element(UserPageLocators.AVATAR_INPUT)
 
-    # def opened_dialog(self) -> WebElement:
-    #     return self.find_element(UserPageLocators.OPENED_DIALOGS)
-
     def is_opened_dialogs(self) -> bool:
         elements = self.find_elements(UserPageLocators.OPENED_DIALOGS)
         if len(elements) > 0:
