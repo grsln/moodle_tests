@@ -1,39 +1,24 @@
 {
-  "uid" : "c9b11487f7018caf",
-  "name" : "test_long_firstname[firstname0]",
-  "fullName" : "tests.profile_page.test_user_page.TestLongFirstname#test_long_firstname",
-  "historyId" : "f23bd87fe75cc860874b083a4d865086",
+  "uid" : "be5427beae61f05c",
+  "name" : "test_usermenu",
+  "fullName" : "tests.profile_page.test_user_page.TestUserPage#test_usermenu",
+  "historyId" : "9dfa63c93a88c36ffb54a8cf2a02626d",
   "time" : {
-    "start" : 1633092928382,
-    "stop" : 1633092928884,
-    "duration" : 502
+    "start" : 1633282202645,
+    "stop" : 1633282210969,
+    "duration" : 8324
   },
-  "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
-  "descriptionHtml" : "<pre><code>    Firstname field has attribute maxlength=100\n    Steps\n    1. Type long firstname in firstname field\n    2. Check changes\n</code></pre>\n",
+  "description" : "\n        Steps\n        1. Open profile page\n        2. Change firstname with long string\n        3. Save change\n        4. Open user menu\n        5. Check that menu not clickable\n        ",
+  "descriptionHtml" : "<pre><code>    Steps\n    1. Open profile page\n    2. Change firstname with long string\n    3. Save change\n    4. Open user menu\n    5. Check that menu not clickable\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "user_page",
+    "name" : "auth",
     "time" : {
-      "start" : 1633092924288,
-      "stop" : 1633092928381,
-      "duration" : 4093
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "_session_faker",
-    "time" : {
-      "start" : 1633092813665,
-      "stop" : 1633092813735,
-      "duration" : 70
+      "start" : 1633282198829,
+      "stop" : 1633282202644,
+      "duration" : 3815
     },
     "status" : "passed",
     "steps" : [ ],
@@ -46,9 +31,24 @@
   }, {
     "name" : "app",
     "time" : {
-      "start" : 1633092813735,
-      "stop" : 1633092816243,
-      "duration" : 2508
+      "start" : 1633282093996,
+      "stop" : 1633282096406,
+      "duration" : 2410
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1633282093893,
+      "stop" : 1633282093996,
+      "duration" : 103
     },
     "status" : "passed",
     "steps" : [ ],
@@ -60,13 +60,13 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
+    "description" : "\n        Steps\n        1. Open profile page\n        2. Change firstname with long string\n        3. Save change\n        4. Open user menu\n        5. Check that menu not clickable\n        ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "ca69a459eb343cd9",
+      "uid" : "b68763bdd0e8b2a3",
       "name" : "log",
-      "source" : "ca69a459eb343cd9.txt",
+      "source" : "b68763bdd0e8b2a3.txt",
       "type" : "text/plain",
       "size" : 137
     } ],
@@ -79,9 +79,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633092929580,
-      "stop" : 1633092929637,
-      "duration" : 57
+      "start" : 1633282217214,
+      "stop" : 1633282217272,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -103,13 +103,13 @@
     "value" : "test_user_page"
   }, {
     "name" : "subSuite",
-    "value" : "TestLongFirstname"
+    "value" : "TestUserPage"
   }, {
     "name" : "host",
-    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
+    "value" : "travis-job-512023ea-5016-42bf-92a8-e65fb8870795"
   }, {
     "name" : "thread",
-    "value" : "3676-MainThread"
+    "value" : "3797-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -123,10 +123,7 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ {
-    "name" : "firstname",
-    "value" : "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)"
-  } ],
+  "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -136,6 +133,6 @@
     "categories" : [ ],
     "tags" : [ "profile" ]
   },
-  "source" : "c9b11487f7018caf.json",
-  "parameterValues" : [ "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)" ]
+  "source" : "be5427beae61f05c.json",
+  "parameterValues" : [ ]
 }

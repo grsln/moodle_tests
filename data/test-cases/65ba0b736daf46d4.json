@@ -1,12 +1,12 @@
 {
-  "uid" : "87bebb4e7944360b",
+  "uid" : "65ba0b736daf46d4",
   "name" : "test_create_course",
   "fullName" : "tests.course_page.test_course_page.TestCoursePage#test_create_course",
   "historyId" : "6ba641922241cb5d4b947cbff9dffcf7",
   "time" : {
-    "start" : 1633092830711,
-    "stop" : 1633092847278,
-    "duration" : 16567
+    "start" : 1633282111288,
+    "stop" : 1633282131601,
+    "duration" : 20313
   },
   "description" : "\n        Steps\n        1. Open course page\n        2. Fill fields with valid data\n        3. Save changes\n        4. Check changes\n        ",
   "descriptionHtml" : "<pre><code>    Steps\n    1. Open course page\n    2. Fill fields with valid data\n    3. Save changes\n    4. Check changes\n</code></pre>\n",
@@ -14,25 +14,10 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "_session_faker",
-    "time" : {
-      "start" : 1633092813665,
-      "stop" : 1633092813735,
-      "duration" : 70
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
     "name" : "delete_course",
     "time" : {
-      "start" : 1633092830710,
-      "stop" : 1633092830710,
+      "start" : 1633282111287,
+      "stop" : 1633282111287,
       "duration" : 0
     },
     "status" : "passed",
@@ -46,9 +31,24 @@
   }, {
     "name" : "app",
     "time" : {
-      "start" : 1633092813735,
-      "stop" : 1633092816243,
-      "duration" : 2508
+      "start" : 1633282093996,
+      "stop" : 1633282096406,
+      "duration" : 2410
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1633282093893,
+      "stop" : 1633282093996,
+      "duration" : 103
     },
     "status" : "passed",
     "steps" : [ ],
@@ -61,9 +61,9 @@
   }, {
     "name" : "auth",
     "time" : {
-      "start" : 1633092828578,
-      "stop" : 1633092830710,
-      "duration" : 2132
+      "start" : 1633282108756,
+      "stop" : 1633282111287,
+      "duration" : 2531
     },
     "status" : "passed",
     "steps" : [ ],
@@ -79,9 +79,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "1cbb20940443c5ea",
+      "uid" : "eb8564a0f81007ba",
       "name" : "log",
-      "source" : "1cbb20940443c5ea.txt",
+      "source" : "eb8564a0f81007ba.txt",
       "type" : "text/plain",
       "size" : 127
     } ],
@@ -94,9 +94,9 @@
   "afterStages" : [ {
     "name" : "delete_course::0",
     "time" : {
-      "start" : 1633092847283,
-      "stop" : 1633092876238,
-      "duration" : 28955
+      "start" : 1633282131602,
+      "stop" : 1633282163976,
+      "duration" : 32374
     },
     "status" : "passed",
     "steps" : [ ],
@@ -109,9 +109,9 @@
   }, {
     "name" : "app::0",
     "time" : {
-      "start" : 1633092929580,
-      "stop" : 1633092929637,
-      "duration" : 57
+      "start" : 1633282217214,
+      "stop" : 1633282217272,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -136,10 +136,10 @@
     "value" : "TestCoursePage"
   }, {
     "name" : "host",
-    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
+    "value" : "travis-job-512023ea-5016-42bf-92a8-e65fb8870795"
   }, {
     "name" : "thread",
-    "value" : "3676-MainThread"
+    "value" : "3797-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -163,6 +163,6 @@
     "categories" : [ ],
     "tags" : [ "course" ]
   },
-  "source" : "87bebb4e7944360b.json",
+  "source" : "65ba0b736daf46d4.json",
   "parameterValues" : [ ]
 }

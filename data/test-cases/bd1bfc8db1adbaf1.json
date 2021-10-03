@@ -1,12 +1,12 @@
 {
-  "uid" : "69ab52d36eb96046",
-  "name" : "test_long_firstname[firstname1]",
+  "uid" : "bd1bfc8db1adbaf1",
+  "name" : "test_long_firstname[firstname0]",
   "fullName" : "tests.profile_page.test_user_page.TestLongFirstname#test_long_firstname",
-  "historyId" : "c2333a1f4ea91d213d6c6dcf3578aca4",
+  "historyId" : "f23bd87fe75cc860874b083a4d865086",
   "time" : {
-    "start" : 1633092928890,
-    "stop" : 1633092929231,
-    "duration" : 341
+    "start" : 1633282216048,
+    "stop" : 1633282216511,
+    "duration" : 463
   },
   "description" : "\n        Firstname field has attribute maxlength=100\n        Steps\n        1. Type long firstname in firstname field\n        2. Check changes\n        ",
   "descriptionHtml" : "<pre><code>    Firstname field has attribute maxlength=100\n    Steps\n    1. Type long firstname in firstname field\n    2. Check changes\n</code></pre>\n",
@@ -14,11 +14,26 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1633282093996,
+      "stop" : 1633282096406,
+      "duration" : 2410
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
     "name" : "user_page",
     "time" : {
-      "start" : 1633092924288,
-      "stop" : 1633092928381,
-      "duration" : 4093
+      "start" : 1633282210972,
+      "stop" : 1633282216047,
+      "duration" : 5075
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,24 +46,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1633092813665,
-      "stop" : 1633092813735,
-      "duration" : 70
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "app",
-    "time" : {
-      "start" : 1633092813735,
-      "stop" : 1633092816243,
-      "duration" : 2508
+      "start" : 1633282093893,
+      "stop" : 1633282093996,
+      "duration" : 103
     },
     "status" : "passed",
     "steps" : [ ],
@@ -64,9 +64,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "3ae4a883004c1a14",
+      "uid" : "b05815c59e3b4cbf",
       "name" : "log",
-      "source" : "3ae4a883004c1a14.txt",
+      "source" : "b05815c59e3b4cbf.txt",
       "type" : "text/plain",
       "size" : 137
     } ],
@@ -79,9 +79,9 @@
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633092929580,
-      "stop" : 1633092929637,
-      "duration" : 57
+      "start" : 1633282217214,
+      "stop" : 1633282217272,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -106,10 +106,10 @@
     "value" : "TestLongFirstname"
   }, {
     "name" : "host",
-    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
+    "value" : "travis-job-512023ea-5016-42bf-92a8-e65fb8870795"
   }, {
     "name" : "thread",
-    "value" : "3676-MainThread"
+    "value" : "3797-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -125,7 +125,7 @@
   } ],
   "parameters" : [ {
     "name" : "firstname",
-    "value" : "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 100)"
+    "value" : "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -136,6 +136,6 @@
     "categories" : [ ],
     "tags" : [ "profile" ]
   },
-  "source" : "69ab52d36eb96046.json",
-  "parameterValues" : [ "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 100)" ]
+  "source" : "bd1bfc8db1adbaf1.json",
+  "parameterValues" : [ "('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 99)" ]
 }

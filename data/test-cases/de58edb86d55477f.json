@@ -1,24 +1,24 @@
 {
-  "uid" : "2e9501cb02faa66c",
-  "name" : "test_auth_valid_data",
-  "fullName" : "tests.auth.test_auth.TestAuth#test_auth_valid_data",
-  "historyId" : "fcec89ebca5f6daf506231d5c1f7ecc2",
+  "uid" : "de58edb86d55477f",
+  "name" : "test_auth_valid_login[]",
+  "fullName" : "tests.auth.test_auth.TestAuth#test_auth_valid_login",
+  "historyId" : "cb84ab2259d78089985514eed45478ff",
   "time" : {
-    "start" : 1633092816244,
-    "stop" : 1633092821933,
-    "duration" : 5689
+    "start" : 1633282106191,
+    "stop" : 1633282107477,
+    "duration" : 1286
   },
-  "description" : "\n        Steps\n        1. Open main page\n        2. Auth with valid data\n        3. Check auth result\n        ",
-  "descriptionHtml" : "<pre><code>    Steps\n    1. Open main page\n    2. Auth with valid data\n    3. Check auth result\n</code></pre>\n",
+  "description" : "\n        Steps\n        1. Open main page\n        2. Auth with valid login and invalid password\n        3. Check auth result\n        ",
+  "descriptionHtml" : "<pre><code>    Steps\n    1. Open main page\n    2. Auth with valid login and invalid password\n    3. Check auth result\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "_session_faker",
+    "name" : "app",
     "time" : {
-      "start" : 1633092813665,
-      "stop" : 1633092813735,
-      "duration" : 70
+      "start" : 1633282093996,
+      "stop" : 1633282096406,
+      "duration" : 2410
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,11 +29,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "app",
+    "name" : "_session_faker",
     "time" : {
-      "start" : 1633092813735,
-      "stop" : 1633092816243,
-      "duration" : 2508
+      "start" : 1633282093893,
+      "stop" : 1633282093996,
+      "duration" : 103
     },
     "status" : "passed",
     "steps" : [ ],
@@ -45,34 +45,28 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n        Steps\n        1. Open main page\n        2. Auth with valid data\n        3. Check auth result\n        ",
+    "description" : "\n        Steps\n        1. Open main page\n        2. Auth with valid login and invalid password\n        3. Check auth result\n        ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "db393c3a262bee4e",
+      "uid" : "939812d76367d501",
       "name" : "log",
-      "source" : "db393c3a262bee4e.txt",
+      "source" : "939812d76367d501.txt",
       "type" : "text/plain",
-      "size" : 632
-    }, {
-      "uid" : "54d2bbd67b03bb56",
-      "name" : "stderr",
-      "source" : "54d2bbd67b03bb56.txt",
-      "type" : "text/plain",
-      "size" : 433
+      "size" : 52
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "attachmentsCount" : 2,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "app::0",
     "time" : {
-      "start" : 1633092929580,
-      "stop" : 1633092929637,
-      "duration" : 57
+      "start" : 1633282217214,
+      "stop" : 1633282217272,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -97,10 +91,10 @@
     "value" : "TestAuth"
   }, {
     "name" : "host",
-    "value" : "travis-job-5d2305c2-3d10-4ebb-a491-014594d82879"
+    "value" : "travis-job-512023ea-5016-42bf-92a8-e65fb8870795"
   }, {
     "name" : "thread",
-    "value" : "3676-MainThread"
+    "value" : "3797-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -114,7 +108,10 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "''"
+  } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -124,6 +121,6 @@
     "categories" : [ ],
     "tags" : [ "auth" ]
   },
-  "source" : "2e9501cb02faa66c.json",
-  "parameterValues" : [ ]
+  "source" : "de58edb86d55477f.json",
+  "parameterValues" : [ "''" ]
 }

@@ -1,68 +1,88 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Oct 01 12:55:28 UTC 2021","Fri Oct 01 12:55:28 UTC 2021","502","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname0]","
+"passed","Sun Oct 03 17:28:27 UTC 2021","Sun Oct 03 17:28:28 UTC 2021","1270","tests.auth","test_auth","TestAuth","","","test_auth_valid_login[password]","
+        Steps
+        1. Open main page
+        2. Auth with valid login and invalid password
+        3. Check auth result
+        "
+"passed","Sun Oct 03 17:28:23 UTC 2021","Sun Oct 03 17:28:25 UTC 2021","1059","tests.auth","test_auth","TestAuth","","","test_auth_empty_data[login]","
+        Steps
+        1. Open main page
+        2. Auth with empty data
+        3. Check auth result
+        "
+"passed","Sun Oct 03 17:28:26 UTC 2021","Sun Oct 03 17:28:27 UTC 2021","1286","tests.auth","test_auth","TestAuth","","","test_auth_valid_login[]","
+        Steps
+        1. Open main page
+        2. Auth with valid login and invalid password
+        3. Check auth result
+        "
+"passed","Sun Oct 03 17:30:16 UTC 2021","Sun Oct 03 17:30:16 UTC 2021","347","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname1]","
         Firstname field has attribute maxlength=100
         Steps
         1. Type long firstname in firstname field
         2. Check changes
         "
-"passed","Fri Oct 01 12:53:47 UTC 2021","Fri Oct 01 12:53:48 UTC 2021","1256","tests.auth","test_auth","TestAuth","","","test_auth_valid_login[password]","
-        Steps
-        1. Open main page
-        2. Auth with valid login and invalid password
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:54:38 UTC 2021","Fri Oct 01 12:54:47 UTC 2021","8767","tests.profile_page","test_user_page","TestUserPage","","","test_change_field","
-        Steps
-        1. Open profile page
-        2. Change fields with valid data
-        3. Save changes
-        4. Check changes
-        "
-"passed","Fri Oct 01 12:53:45 UTC 2021","Fri Oct 01 12:53:46 UTC 2021","1026","tests.auth","test_auth","TestAuth","","","test_auth_empty_data[password]","
-        Steps
-        1. Open main page
-        2. Auth with empty data
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:53:41 UTC 2021","Fri Oct 01 12:53:44 UTC 2021","2083","tests.auth","test_auth","TestAuth","","","test_auth_invalid_data","
-        Steps
-        1. Open main page
-        2. Auth with invalid data
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:53:46 UTC 2021","Fri Oct 01 12:53:47 UTC 2021","1226","tests.auth","test_auth","TestAuth","","","test_auth_valid_login[]","
-        Steps
-        1. Open main page
-        2. Auth with valid login and invalid password
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:53:36 UTC 2021","Fri Oct 01 12:53:41 UTC 2021","5689","tests.auth","test_auth","TestAuth","","","test_auth_valid_data","
-        Steps
-        1. Open main page
-        2. Auth with valid data
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:53:44 UTC 2021","Fri Oct 01 12:53:45 UTC 2021","1017","tests.auth","test_auth","TestAuth","","","test_auth_empty_data[login]","
-        Steps
-        1. Open main page
-        2. Auth with empty data
-        3. Check auth result
-        "
-"passed","Fri Oct 01 12:53:50 UTC 2021","Fri Oct 01 12:54:07 UTC 2021","16567","tests.course_page","test_course_page","TestCoursePage","","","test_create_course","
+"passed","Sun Oct 03 17:28:31 UTC 2021","Sun Oct 03 17:28:51 UTC 2021","20313","tests.course_page","test_course_page","TestCoursePage","","","test_create_course","
         Steps
         1. Open course page
         2. Fill fields with valid data
         3. Save changes
         4. Check changes
         "
-"passed","Fri Oct 01 12:55:08 UTC 2021","Fri Oct 01 12:55:13 UTC 2021","4895","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[email]","
+"passed","Sun Oct 03 17:29:26 UTC 2021","Sun Oct 03 17:29:34 UTC 2021","8011","tests.profile_page","test_user_page","TestUserPage","","","test_change_field","
+        Steps
+        1. Open profile page
+        2. Change fields with valid data
+        3. Save changes
+        4. Check changes
+        "
+"passed","Sun Oct 03 17:28:25 UTC 2021","Sun Oct 03 17:28:26 UTC 2021","1124","tests.auth","test_auth","TestAuth","","","test_auth_empty_data[password]","
+        Steps
+        1. Open main page
+        2. Auth with empty data
+        3. Check auth result
+        "
+"passed","Sun Oct 03 17:29:45 UTC 2021","Sun Oct 03 17:29:50 UTC 2021","5166","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[lastname]","
         Steps
         1. Open profile page
         2. Change required field with empty data
         3. Save changes
         4. Check changes
         "
-"passed","Fri Oct 01 12:55:16 UTC 2021","Fri Oct 01 12:55:24 UTC 2021","7896","tests.profile_page","test_user_page","TestUserPage","","","test_usermenu","
+"passed","Sun Oct 03 17:28:22 UTC 2021","Sun Oct 03 17:28:23 UTC 2021","1945","tests.auth","test_auth","TestAuth","","","test_auth_invalid_data","
+        Steps
+        1. Open main page
+        2. Auth with invalid data
+        3. Check auth result
+        "
+"passed","Sun Oct 03 17:29:54 UTC 2021","Sun Oct 03 17:29:58 UTC 2021","4728","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[email]","
+        Steps
+        1. Open profile page
+        2. Change required field with empty data
+        3. Save changes
+        4. Check changes
+        "
+"passed","Sun Oct 03 17:30:16 UTC 2021","Sun Oct 03 17:30:16 UTC 2021","463","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname0]","
+        Firstname field has attribute maxlength=100
+        Steps
+        1. Type long firstname in firstname field
+        2. Check changes
+        "
+"passed","Sun Oct 03 17:30:16 UTC 2021","Sun Oct 03 17:30:17 UTC 2021","343","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname2]","
+        Firstname field has attribute maxlength=100
+        Steps
+        1. Type long firstname in firstname field
+        2. Check changes
+        "
+"passed","Sun Oct 03 17:29:38 UTC 2021","Sun Oct 03 17:29:42 UTC 2021","4442","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[firstname]","
+        Steps
+        1. Open profile page
+        2. Change required field with empty data
+        3. Save changes
+        4. Check changes
+        "
+"passed","Sun Oct 03 17:30:02 UTC 2021","Sun Oct 03 17:30:10 UTC 2021","8324","tests.profile_page","test_user_page","TestUserPage","","","test_usermenu","
         Steps
         1. Open profile page
         2. Change firstname with long string
@@ -70,29 +90,9 @@
         4. Open user menu
         5. Check that menu not clickable
         "
-"passed","Fri Oct 01 12:54:50 UTC 2021","Fri Oct 01 12:54:55 UTC 2021","4564","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[firstname]","
+"passed","Sun Oct 03 17:28:16 UTC 2021","Sun Oct 03 17:28:22 UTC 2021","5634","tests.auth","test_auth","TestAuth","","","test_auth_valid_data","
         Steps
-        1. Open profile page
-        2. Change required field with empty data
-        3. Save changes
-        4. Check changes
-        "
-"passed","Fri Oct 01 12:55:29 UTC 2021","Fri Oct 01 12:55:29 UTC 2021","344","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname2]","
-        Firstname field has attribute maxlength=100
-        Steps
-        1. Type long firstname in firstname field
-        2. Check changes
-        "
-"passed","Fri Oct 01 12:55:28 UTC 2021","Fri Oct 01 12:55:29 UTC 2021","341","tests.profile_page","test_user_page","TestLongFirstname","","","test_long_firstname[firstname1]","
-        Firstname field has attribute maxlength=100
-        Steps
-        1. Type long firstname in firstname field
-        2. Check changes
-        "
-"passed","Fri Oct 01 12:54:58 UTC 2021","Fri Oct 01 12:55:04 UTC 2021","5989","tests.profile_page","test_user_page","TestUserPage","","","test_required_fields_empty[lastname]","
-        Steps
-        1. Open profile page
-        2. Change required field with empty data
-        3. Save changes
-        4. Check changes
+        1. Open main page
+        2. Auth with valid data
+        3. Check auth result
         "

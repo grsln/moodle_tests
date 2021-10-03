@@ -1,3 +1,0 @@
-2021-10-01 12:55:08 INFO Start test_required_fields_empty
-2021-10-01 12:55:09 INFO Change and save fields
-2021-10-01 12:55:13 INFO Check changes

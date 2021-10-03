@@ -1,0 +1,1 @@
+2021-10-03 17:28:23 INFO Start test_auth_empty_data

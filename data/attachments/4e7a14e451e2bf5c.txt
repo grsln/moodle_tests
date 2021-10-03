@@ -1,3 +1,0 @@
-2021-10-01 12:55:29 INFO Start test_long_firstname
-2021-10-01 12:55:29 INFO Change field firstname
-2021-10-01 12:55:29 INFO Check changes
