@@ -19,4 +19,4 @@ deploy:
   keep_history: true
   local_dir: allure-report
   on:
-    branch: main
+    all_branches: true
